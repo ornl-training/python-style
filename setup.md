@@ -2,53 +2,29 @@
 title: Setup
 ---
 
-FIXME: Setup instructions live in this document. Please specify the tools and
-the data sets the Learner needs to have installed.
+## Installing uv
 
-## Data Sets
+The only requirement for this workshop is the uv tool. Detailed installation instructions are given in the [uv documentation](https://docs.astral.sh/uv/getting-started/installation/) but the main macOS, Linux, and Windows installation commands are presented below.
 
-<!--
-FIXME: place any data you want learners to use in `episodes/data` and then use
-       a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
-       link to it, replacing the example.com link.
--->
-Download the [data zip file](https://example.com/FIXME) and unzip it to your Desktop
+Install uv on macOS and Linux with:
 
-## Software Setup
+```bash
+$ curl -LsSf https://astral.sh/uv/install.sh | sh
+```
 
-::::::::::::::::::::::::::::::::::::::: discussion
+Install uv on Windows with:
 
-### Details
+```bash
+$ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
 
-Setup for different systems can be presented in dropdown menus via a `spoiler`
-tag. They will join to this discussion block, so you can give a general overview
-of the software used in this lesson here and fill out the individual operating
-systems (and potentially add more, e.g. online setup) in the solutions blocks.
+You may need to restart your terminal to ensure that uv was installed. Check the installation by displaying the version number using the `--version` option as shown below. If the command displays the uv version number then the installation was successful.
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::
+```bash
+$ uv --version
+```
 
-:::::::::::::::: spoiler
-
-### Windows
-
-Use PuTTY
-
-::::::::::::::::::::::::
-
-:::::::::::::::: spoiler
-
-### MacOS
-
-Use Terminal.app
-
-::::::::::::::::::::::::
-
-
-:::::::::::::::: spoiler
-
-### Linux
-
-Use Terminal
-
-::::::::::::::::::::::::
+```output
+uv 0.8.4 (e176e1714 2025-07-30)
+```
 
