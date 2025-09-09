@@ -388,7 +388,39 @@ tools.</p></section><section id="aio-style-guide"><p>Content from <a href="style
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
-<p>here</p></section><section id="aio-linting"><p>Content from <a href="linting.html">Linting Python Code</a></p>
+<p>The <a href="https://peps.python.org/pep-0008/" class="external-link">PEP 8 Style Guide for
+Python Code</a> gives coding conventions for code layout, comments,
+naming, and other programming recommendations. The <a href="https://pep8.org/" class="external-link">pep8.org</a> website is another presentation of
+the style guide. By adhering to the Python style guide, developers can
+write consistent code that is readable and maintainable on small and
+large projects. Some of the major conventions suggested by the guide are
+demonstrated below but readers should review the PEP 8 guide for more
+information.</p>
+<section><h2 class="section-heading" id="indentation">Indentation<a class="anchor" aria-label="anchor" href="#indentation"></a>
+</h2>
+<hr class="half-width">
+<p>Use 4 spaces per indentation level and spaces are the preferred
+indentation method.</p>
+</section><section><h2 class="section-heading" id="imports">Imports<a class="anchor" aria-label="anchor" href="#imports"></a>
+</h2>
+<hr class="half-width">
+<p>Imports should be on separate lines except when using the from
+syntax. Imports are always put at the top of the file, just after any
+module comments and docstrings, and before module globals and
+constants.</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="im">import</span> sys</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="im">from</span> subprocess <span class="im">import</span> Popen, PIPE</span></code></pre>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</section></section><section id="aio-linting"><p>Content from <a href="linting.html">Linting Python Code</a></p>
 <hr>
 <p>Last updated on 2025-09-09 |
 
