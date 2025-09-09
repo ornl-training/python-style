@@ -65,8 +65,11 @@ contact: 'team@carpentries.org' # FIXME
 # - another-learner.md
 
 # Order of episodes in your lesson
-episodes: 
-- introduction.md
+episodes:
+- writing.md
+- style-guide.md
+- linting.md
+- formatting.md
 
 # Information for Learners
 learners: 
