@@ -13,5 +13,5 @@ Specifically:
 - Poor grammar and spelling can undermine the perceived quality of the research, reduce the article’s impact, and may lead to rejection from journals or negative reviewer assessments.
 - Mastery of grammar and spelling demonstrates attention to detail and academic rigor, which are vital in scholarly publishing.
 
-In summary, grammar and spelling are foundational to writing a clear, credible, and professional journal article, helping to communicate research findings effectively to the academic community. Just as grammar and spelling are essential for clear communication in journal articles, proper spelling, consistent naming, and correct syntax in code are vital for clarity, functionality, maintainability, and teamwork in software development. Developers can accomplish well written Python code by adhering to Python's style guide while using linter and formatter tools.
+Just as grammar and spelling are essential for clear communication in journal and technical articles, proper spelling, consistent naming, and correct syntax in code are vital for clarity, functionality, maintainability, and teamwork in software development. Developers can accomplish well written Python code by adhering to Python's style guide while using linter and formatter tools.
 
