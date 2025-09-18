@@ -344,7 +344,7 @@
         
 <section id="aio-writing"><p>Content from <a href="writing.html">Professional Writing</a></p>
 <hr>
-<p>Last updated on 2025-09-09 |
+<p>Last updated on 2025-09-18 |
 
         <a href="https://github.com/ornl-training/python-style/edit/main/episodes/writing.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -372,17 +372,14 @@ journals or negative reviewer assessments.</li>
 <li>Mastery of grammar and spelling demonstrates attention to detail and
 academic rigor, which are vital in scholarly publishing.</li>
 </ul>
-<p>In summary, grammar and spelling are foundational to writing a clear,
-credible, and professional journal article, helping to communicate
-research findings effectively to the academic community. Just as grammar
-and spelling are essential for clear communication in journal articles,
-proper spelling, consistent naming, and correct syntax in code are vital
-for clarity, functionality, maintainability, and teamwork in software
-development. Developers can accomplish well written Python code by
-adhering to Python’s style guide while using linter and formatter
-tools.</p></section><section id="aio-style-guide"><p>Content from <a href="style-guide.html">Python Style Guide</a></p>
+<p>Just as grammar and spelling are essential for clear communication in
+journal and technical articles, proper spelling, consistent naming, and
+correct syntax in code are vital for clarity, functionality,
+maintainability, and teamwork in software development. Developers can
+accomplish well written Python code by adhering to Python’s style guide
+while using linter and formatter tools.</p></section><section id="aio-style-guide"><p>Content from <a href="style-guide.html">Python Style Guide</a></p>
 <hr>
-<p>Last updated on 2025-09-09 |
+<p>Last updated on 2025-09-18 |
 
         <a href="https://github.com/ornl-training/python-style/edit/main/episodes/style-guide.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -399,8 +396,27 @@ information.</p>
 <section><h2 class="section-heading" id="indentation">Indentation<a class="anchor" aria-label="anchor" href="#indentation"></a>
 </h2>
 <hr class="half-width">
-<p>Use 4 spaces per indentation level and spaces are the preferred
-indentation method.</p>
+<p>Spaces (not tabs) are the preferred indentation method. Use 4 spaces
+per indentation level.</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="co"># Correct</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"x is"</span>, i)</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="kw">def</span> sayhello():</span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a>    x <span class="op">=</span> <span class="st">"Hello there"</span></span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a>    <span class="cf">return</span> x</span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a><span class="co"># Wrong</span></span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a><span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">"x is"</span>, x)</span>
+<span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" tabindex="-1"></a><span class="kw">def</span> sayhello():</span>
+<span id="cb1-14"><a href="#cb1-14" tabindex="-1"></a>  x <span class="op">=</span> <span class="st">"Hello there"</span></span>
+<span id="cb1-15"><a href="#cb1-15" tabindex="-1"></a>  <span class="cf">return</span> x</span></code></pre>
+</div>
 </section><section><h2 class="section-heading" id="imports">Imports<a class="anchor" aria-label="anchor" href="#imports"></a>
 </h2>
 <hr class="half-width">
@@ -408,13 +424,65 @@ indentation method.</p>
 syntax. Imports are always put at the top of the file, just after any
 module comments and docstrings, and before module globals and
 constants.</p>
-<div class="codewrapper sourceCode" id="cb1">
+<div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="im">import</span> os</span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="im">import</span> sys</span>
-<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="im">from</span> subprocess <span class="im">import</span> Popen, PIPE</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="co"># Correct</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="im">import</span> numpy</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="im">import</span> polars</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a><span class="im">from</span> subprocess <span class="im">import</span> Popen, PIPE</span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a><span class="co"># Wrong</span></span>
+<span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a><span class="im">import</span> numpy, polars</span></code></pre>
+</div>
+<p>Imports should be grouped in the order shown below. An empty line
+should be placed between each group of imports.</p>
+<ol style="list-style-type: decimal">
+<li>Standard library imports</li>
+<li>Third party imports</li>
+<li>Local application/library specific imports</li>
+</ol>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="co"># Standard library</span></span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a><span class="co"># Third party</span></span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a><span class="co"># Local package</span></span>
+<span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a><span class="im">from</span> mypackage.utils <span class="im">import</span> sayhello</span></code></pre>
+</div>
+<p>Wildcard imports such as <code>from package import *</code> should be
+avoided because it is unclear what is actually imported from the
+package. This confuses both human readers of the code as well as
+automated tools.</p>
+</section><section><h2 class="section-heading" id="documentation-strings">Documentation strings<a class="anchor" aria-label="anchor" href="#documentation-strings"></a>
+</h2>
+<hr class="half-width">
+<p>Documentation strings, or docstrings, should be written for modules,
+functions, classes, and methods to describe the associated code. Several
+docstring styles exist such as the <a href="https://numpydoc.readthedocs.io/en/latest/format.html" class="external-link">NumPy
+style</a> and the <a href="https://google.github.io/styleguide/pyguide.html#s3.8-comments-and-docstrings" class="external-link">Google
+style</a>. The example below uses the Google docstring style.</p>
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="kw">def</span> sayhello(x: <span class="bu">str</span>) <span class="op">-&gt;</span> <span class="bu">str</span>:</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>    <span class="co">"""Create a greeting to say hello to someone.</span></span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="co">    Args:</span></span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a><span class="co">        x: Name of a person for the greeting.</span></span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a><span class="co">    Returns:</span></span>
+<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a><span class="co">        A greeting for the given name.</span></span>
+<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb4-10"><a href="#cb4-10" tabindex="-1"></a>    greeting <span class="op">=</span> <span class="ss">f"Hello </span><span class="sc">{</span>x<span class="sc">}</span><span class="ss">, how are you today?"</span></span>
+<span id="cb4-11"><a href="#cb4-11" tabindex="-1"></a>    <span class="cf">return</span> greeting</span></code></pre>
 </div>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
@@ -484,8 +552,8 @@ any links that you are not going to use.
   "url": "https://ornl-training.github.io/python-style/aio.html",
   "identifier": "https://ornl-training.github.io/python-style/aio.html",
   "dateCreated": "2025-09-08",
-  "dateModified": "2025-09-16",
-  "datePublished": "2025-09-16"
+  "dateModified": "2025-09-18",
+  "datePublished": "2025-09-18"
 }
 
   </script><script>
