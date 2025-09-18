@@ -12,6 +12,7 @@ Spaces (not tabs) are the preferred indentation method. Use 4 spaces per indenta
 
 ```python
 # Correct
+
 for x in range(10):
     print("x is", i)
 
@@ -20,6 +21,7 @@ def sayhello():
     return x
 
 # Wrong
+
 for x in range(10):
   print("x is", x)
 
@@ -34,12 +36,14 @@ Imports should be on separate lines except when using the from syntax. Imports a
 
 ```python
 # Correct
+
 import numpy
 import polars
 
 from subprocess import Popen, PIPE
 
 # Wrong
+
 import numpy, polars
 ```
 
@@ -51,14 +55,17 @@ Imports should be grouped in the order shown below. An empty line should be plac
 
 ```python
 # Standard library
+
 import os
 import math
 
 # Third party
+
 import numpy as np
 import matplotlib.pyplot as plt
 
 # Local package
+
 from mypackage.utils import sayhello
 ```
 
@@ -82,3 +89,58 @@ def sayhello(x: str) -> str:
     return greeting
 ```
 
+## Naming conventions
+
+Modules should have short lowercase names where underscores can be used to improve readability. Packages should also have short lowercase names but use of underscores is discouraged.
+
+```bash
+# Module names
+
+downloader.py
+
+file_downloader.py
+```
+
+```python
+# Package names
+
+import mypackage
+```
+
+Class names should use the capitalized words (or CapWords, CamelCase) convention.
+
+```python
+class Downloader:
+    ...
+
+dl = Downloader()
+
+class FileDownloader:
+    ...
+
+file = FileDownloader()
+```
+
+Function and variable names should be lowercase with underscores to separate words for readability.
+
+```python
+def hello(x):
+    return f"Hello {x}"
+
+def say_hello(x):
+    y = f"Hello {x}"
+    print(y)
+```
+
+Constants are usually defined at the module level and written in all capital letters.
+
+```python
+# Contents of module named example.py
+
+import numpy as np
+import pandas as pd
+
+TOTAL = 89
+
+API_URL = "https://mywebsite/api:8090"
+```
