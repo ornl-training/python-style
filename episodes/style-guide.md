@@ -121,7 +121,7 @@ class FileDownloader:
 file = FileDownloader()
 ```
 
-Function and variable names should be lowercase with underscores to separate words for readability.
+Function and variable names should be lowercase with underscores to separate words for readability. This naming convention applies to methods on a class object too.
 
 ```python
 def hello(x):
@@ -135,12 +135,12 @@ def say_hello(x):
 Constants are usually defined at the module level and written in all capital letters.
 
 ```python
-# Contents of module named example.py
+# A module named example.py
 
 import numpy as np
 import pandas as pd
 
+# Constants for this module
 TOTAL = 89
-
 API_URL = "https://mywebsite/api:8090"
 ```
