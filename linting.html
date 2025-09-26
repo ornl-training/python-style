@@ -224,12 +224,19 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         3. Linting Python Code
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#linting-examples">Linting examples</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
 
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -301,7 +308,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Linting Python Code</h1>
-        <p>Last updated on 2025-09-09 |
+        <p>Last updated on 2025-09-26 |
 
         <a href="https://github.com/ornl-training/python-style/edit/main/episodes/linting.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -313,15 +320,27 @@
 
         
 
-<p>here</p>
+<p>A code linter tool is a static code analysis program that
+automatically checks source code for errors, bugs, stylistic issues, and
+deviations from coding standards, all without executing the code.
+Linters help developers catch problems early by flagging questionable
+constructs, possible vulnerabilities, or code that doesn’t follow best
+practices.</p>
+<p><a href="https://docs.astral.sh/ruff/" class="external-link">Ruff</a> is a highly
+performant linter specifically for Python code. It checks for errors,
+style issues, and deviations from best practices, and can automatically
+fix some issues. It is a direct replacement for tools like Flake8,
+isort, pydocstyle, pyupgrade, and autoflake. Ruff is rapidly becoming
+the standard Python linting choice due to its speed, breadth of
+features, and ease of integration. Consequently, Ruff is used in this
+episode to demonstrate various linting features for Python code.</p>
+<section><h2 class="section-heading" id="linting-examples">Linting examples<a class="anchor" aria-label="anchor" href="#linting-examples"></a></h2>
+<hr class="half-width"><p>here</p>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-
-
-
-      </div> <!-- / div.lesson-content -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="style-guide.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="formatting.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -379,8 +398,8 @@ any links that you are not going to use.
   "url": "https://ornl-training.github.io/python-style/linting.html",
   "identifier": "https://ornl-training.github.io/python-style/linting.html",
   "dateCreated": "2025-09-08",
-  "dateModified": "2025-09-09",
-  "datePublished": "2025-09-23"
+  "dateModified": "2025-09-26",
+  "datePublished": "2025-09-26"
 }
 
   </script><script>

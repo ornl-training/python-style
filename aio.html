@@ -379,7 +379,7 @@ maintainability, and teamwork in software development. Developers can
 accomplish well written Python code by adhering to Python’s style guide
 while using linter and formatter tools.</p></section><section id="aio-style-guide"><p>Content from <a href="style-guide.html">Python Style Guide</a></p>
 <hr>
-<p>Last updated on 2025-09-18 |
+<p>Last updated on 2025-09-26 |
 
         <a href="https://github.com/ornl-training/python-style/edit/main/episodes/style-guide.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -529,7 +529,8 @@ convention.</p>
 <span id="cb7-9"><a href="#cb7-9" tabindex="-1"></a><span class="bu">file</span> <span class="op">=</span> FileDownloader()</span></code></pre>
 </div>
 <p>Function and variable names should be lowercase with underscores to
-separate words for readability.</p>
+separate words for readability. This naming convention applies to
+methods on a class object too.</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -545,13 +546,13 @@ capital letters.</p>
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="co"># Contents of module named example.py</span></span>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="co"># A module named example.py</span></span>
 <span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a></span>
 <span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a></span>
-<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a>TOTAL <span class="op">=</span> <span class="dv">89</span></span>
-<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a><span class="co"># Constants for this module</span></span>
+<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a>TOTAL <span class="op">=</span> <span class="dv">89</span></span>
 <span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a>API_URL <span class="op">=</span> <span class="st">"https://mywebsite/api:8090"</span></span></code></pre>
 </div>
 <!--
@@ -560,21 +561,66 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-linting"><p>Content from <a href="linting.html">Linting Python Code</a></p>
 <hr>
-<p>Last updated on 2025-09-09 |
+<p>Last updated on 2025-09-26 |
 
         <a href="https://github.com/ornl-training/python-style/edit/main/episodes/linting.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
-<p>here</p></section><section id="aio-formatting"><p>Content from <a href="formatting.html">Formatting Python Code</a></p>
+<p>A code linter tool is a static code analysis program that
+automatically checks source code for errors, bugs, stylistic issues, and
+deviations from coding standards, all without executing the code.
+Linters help developers catch problems early by flagging questionable
+constructs, possible vulnerabilities, or code that doesn’t follow best
+practices.</p>
+<p><a href="https://docs.astral.sh/ruff/" class="external-link">Ruff</a> is a highly
+performant linter specifically for Python code. It checks for errors,
+style issues, and deviations from best practices, and can automatically
+fix some issues. It is a direct replacement for tools like Flake8,
+isort, pydocstyle, pyupgrade, and autoflake. Ruff is rapidly becoming
+the standard Python linting choice due to its speed, breadth of
+features, and ease of integration. Consequently, Ruff is used in this
+episode to demonstrate various linting features for Python code.</p>
+<section><h2 class="section-heading" id="linting-examples">Linting examples<a class="anchor" aria-label="anchor" href="#linting-examples"></a>
+</h2>
+<hr class="half-width">
+<p>here</p>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</section></section><section id="aio-formatting"><p>Content from <a href="formatting.html">Formatting Python Code</a></p>
 <hr>
-<p>Last updated on 2025-09-09 |
+<p>Last updated on 2025-09-26 |
 
         <a href="https://github.com/ornl-training/python-style/edit/main/episodes/formatting.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
-<p>here</p></section>
+<p>A code formatter is a tool that automatically reformats source code
+according to a set of predefined style guidelines, ensuring consistency
+in indentation, line breaks, spacing, and other structural aspects of
+code. The primary goal is to enhance readability, maintain uniform code
+style across a project, and reduce the need for manual formatting by
+developers.</p>
+<p><a href="https://docs.astral.sh/ruff/" class="external-link">Ruff</a>, originally known as
+a Python linter, also includes code formatting capabilities, allowing it
+to apply automatic style adjustments to Python source code. This means
+Ruff can handle both code linting (error and code quality checks) and
+code formatting (enforcing a consistent style), much like specialized
+Python formatters such as <a href="https://black.readthedocs.io/en/stable" class="external-link">Black</a>. Ruff’s
+formatter is designed to work very quickly due to its Rust
+implementation, making it efficient for large projects and continuous
+integration (CI) workflows.</p>
+<section><h2 class="section-heading" id="formatting-examples">Formatting examples<a class="anchor" aria-label="anchor" href="#formatting-examples"></a>
+</h2>
+<hr class="half-width">
+<p>here</p>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</section></section>
 </div>
     </main>
 </div>
@@ -622,8 +668,8 @@ any links that you are not going to use.
   "url": "https://ornl-training.github.io/python-style/aio.html",
   "identifier": "https://ornl-training.github.io/python-style/aio.html",
   "dateCreated": "2025-09-08",
-  "dateModified": "2025-09-23",
-  "datePublished": "2025-09-23"
+  "dateModified": "2025-09-26",
+  "datePublished": "2025-09-26"
 }
 
   </script><script>

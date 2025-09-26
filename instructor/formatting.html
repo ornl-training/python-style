@@ -233,12 +233,19 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         4. Formatting Python Code
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#formatting-examples">Formatting examples</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
 
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -301,7 +308,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Formatting Python Code</h1>
-        <p>Last updated on 2025-09-09 |
+        <p>Last updated on 2025-09-26 |
 
         <a href="https://github.com/ornl-training/python-style/edit/main/episodes/formatting.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -315,15 +322,28 @@
 
         
 
-<p>here</p>
+<p>A code formatter is a tool that automatically reformats source code
+according to a set of predefined style guidelines, ensuring consistency
+in indentation, line breaks, spacing, and other structural aspects of
+code. The primary goal is to enhance readability, maintain uniform code
+style across a project, and reduce the need for manual formatting by
+developers.</p>
+<p><a href="https://docs.astral.sh/ruff/" class="external-link">Ruff</a>, originally known as
+a Python linter, also includes code formatting capabilities, allowing it
+to apply automatic style adjustments to Python source code. This means
+Ruff can handle both code linting (error and code quality checks) and
+code formatting (enforcing a consistent style), much like specialized
+Python formatters such as <a href="https://black.readthedocs.io/en/stable" class="external-link">Black</a>. Ruff’s
+formatter is designed to work very quickly due to its Rust
+implementation, making it efficient for large projects and continuous
+integration (CI) workflows.</p>
+<section><h2 class="section-heading" id="formatting-examples">Formatting examples<a class="anchor" aria-label="anchor" href="#formatting-examples"></a></h2>
+<hr class="half-width"><p>here</p>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-
-
-
-      </div> <!-- / div.lesson-content -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/linting.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="../instructor/index.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -381,8 +401,8 @@ any links that you are not going to use.
   "url": "https://ornl-training.github.io/python-style/instructor/formatting.html",
   "identifier": "https://ornl-training.github.io/python-style/instructor/formatting.html",
   "dateCreated": "2025-09-08",
-  "dateModified": "2025-09-09",
-  "datePublished": "2025-09-23"
+  "dateModified": "2025-09-26",
+  "datePublished": "2025-09-26"
 }
 
   </script><script>

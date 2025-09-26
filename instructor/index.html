@@ -379,8 +379,10 @@ any links that you are not going to use.
       The actual schedule may vary slightly depending on the topics and exercises chosen by the instructor.
       </p>
       </section><section id="setup"><section><h2 class="section-heading" id="installing-uv">Installing uv<a class="anchor" aria-label="anchor" href="#installing-uv"></a></h2>
-<hr class="half-width"><p>The only requirement for this workshop is the uv tool. Detailed
-installation instructions are given in the <a href="https://docs.astral.sh/uv/getting-started/installation/" class="external-link">uv
+<hr class="half-width"><p>The first requirement for this workshop is uv which is an extremely
+fast Python package and project manager tool. It is a direct replacement
+for tools like pip, pip-tools, pipx, poetry, pdm, and more. Installation
+instructions are given in the <a href="https://docs.astral.sh/uv/getting-started/installation/" class="external-link">uv
 documentation</a> but the main macOS, Linux, and Windows installation
 commands are presented below.</p>
 <p>Install uv on macOS and Linux with:</p>
@@ -409,6 +411,24 @@ displays the uv version number then the installation was successful.</p>
 </h3>
 <pre class="output" tabindex="0"><code>uv 0.8.4 (e176e1714 2025-07-30)</code></pre>
 </div>
+</section><section><h2 class="section-heading" id="installing-ruff">Installing Ruff<a class="anchor" aria-label="anchor" href="#installing-ruff"></a></h2>
+<hr class="half-width"><p>Another requirement for this workshop is the <a href="https://docs.astral.sh/ruff/" class="external-link">Ruff</a> tool for code linting and
+formatting. There are many ways to install Ruff depending on how you
+plan to use the tool. Ruff can be executed directly with the following
+uv command</p>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="ex">$</span> uvx ruff check</span></code></pre>
+</div>
+<p>Or use uv to install Ruff as a command line tool with</p>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="ex">$</span> uv tool install ruff</span></code></pre>
+</div>
+<p>Editors such as Sublime Text, Zed, Neovim, Visual Studio Code, and
+others support Ruff through extensions or plugins.</p>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
@@ -462,8 +482,8 @@ any links that you are not going to use.
   "url": "https://ornl-training.github.io/python-style/instructor/index.html",
   "identifier": "https://ornl-training.github.io/python-style/instructor/index.html",
   "dateCreated": "2025-09-08",
-  "dateModified": "2025-09-23",
-  "datePublished": "2025-09-23"
+  "dateModified": "2025-09-26",
+  "datePublished": "2025-09-26"
 }
 
   </script><script>
