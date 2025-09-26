@@ -10,4 +10,68 @@ A code linter tool is a static code analysis program that automatically checks s
 
 ## Linting examples
 
-here
+Here is some poorly written Python code:
+
+```Python
+# bad_code.py
+
+import os, sys   # multiple imports on one line
+
+def add(x,y):    # missing whitespace after comma
+    return x+ y  # inconsistent spacing
+
+def unused_function():
+    pass         # unused function
+
+value = 42
+print("The answer is: {}". format(value)) # space before format call
+```
+
+Next, run Ruff to check the code:
+
+```bash
+$ ruff check bad_code.py
+```
+
+Ruff will output the following errors and warnings about the code in the file:
+
+```output
+E401 [*] Multiple imports on one line
+ --> bad_code.py:3:1
+  |
+1 | # bad_code.py
+2 |
+3 | import os, sys   # multiple imports on one line
+  | ^^^^^^^^^^^^^^
+4 |
+5 | def add(x,y):    # missing whitespace after comma
+  |
+help: Split imports
+
+F401 [*] `os` imported but unused
+ --> bad_code.py:3:8
+  |
+1 | # bad_code.py
+2 |
+3 | import os, sys   # multiple imports on one line
+  |        ^^
+4 |
+5 | def add(x,y):    # missing whitespace after comma
+  |
+help: Remove unused import
+
+F401 [*] `sys` imported but unused
+ --> bad_code.py:3:12
+  |
+1 | # bad_code.py
+2 |
+3 | import os, sys   # multiple imports on one line
+  |            ^^^
+4 |
+5 | def add(x,y):    # missing whitespace after comma
+  |
+help: Remove unused import
+
+Found 3 errors.
+[*] 3 fixable with the `--fix` option.
+```
