@@ -16,6 +16,9 @@
     <loc>https://ornl-training.github.io/python-style/aio.html</loc>
   </url>
   <url>
+    <loc>https://ornl-training.github.io/python-style/ci.html</loc>
+  </url>
+  <url>
     <loc>https://ornl-training.github.io/python-style/formatting.html</loc>
   </url>
   <url>
@@ -40,6 +43,9 @@
     <loc>https://ornl-training.github.io/python-style/instructor/aio.html</loc>
   </url>
   <url>
+    <loc>https://ornl-training.github.io/python-style/instructor/ci.html</loc>
+  </url>
+  <url>
     <loc>https://ornl-training.github.io/python-style/instructor/formatting.html</loc>
   </url>
   <url>
@@ -59,6 +65,9 @@
   </url>
   <url>
     <loc>https://ornl-training.github.io/python-style/instructor/linting.html</loc>
+  </url>
+  <url>
+    <loc>https://ornl-training.github.io/python-style/instructor/lsp.html</loc>
   </url>
   <url>
     <loc>https://ornl-training.github.io/python-style/instructor/profiles.html</loc>
@@ -83,6 +92,9 @@
   </url>
   <url>
     <loc>https://ornl-training.github.io/python-style/linting.html</loc>
+  </url>
+  <url>
+    <loc>https://ornl-training.github.io/python-style/lsp.html</loc>
   </url>
   <url>
     <loc>https://ornl-training.github.io/python-style/profiles.html</loc>
